@@ -1,3 +1,8 @@
+# Start with two pointers, one on each side of the list. We want to continually find the min with each cut of
+# the list. If our number on the left is less than the number on the right, then the min is either the left pointer
+# or the previous min that was found, since every number between the left and right pointer would be greater than
+# the left. If the mid point is greater than the left point, we search the right half of the list, if not,
+# then we search the left half of the list.
 class Solution:
 	def findMin(self, nums: List[int]) -> int:
 		res = nums[0]
