@@ -1,3 +1,6 @@
+# This solution uses two pointers to find the max area. Starting at the ends, we calculate the area with the min
+# height of the two points and the distance between them. The lesser height gets incremented towards the other pointer
+# at each iteration.
 class Solution:
 	def maxArea(self, height: List[int]) -> int:
 		res = 0
